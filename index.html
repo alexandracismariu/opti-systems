@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <title>Opti Systems</title>
+
+    <style>
+
+        .bg-indigo-1000 {
+            background-color: rgba(35,32,79,1);
+        }
+
+        .bg-indigo-1100 {
+            background-color: rgba(36,29,71,1);
+        }
+
+        .bg-gray-1000 {
+             background-color: rgba(136,161,150,1);
+        }
+
+        .text-gray-1000 {
+            color: rgba(136,161,150,1);
+        }
+
+        .text-shadow-xs {
+            text-shadow: 0.9px 0.9px rgb(77, 76, 76);
+        }
+
+        .text-shadow-sm {
+            text-shadow: 1px 1px rgb(200, 200, 200);
+        }
+
+        .text-indent {
+            text-indent: 10px;
+        }
+
+        .text-xxs {
+            font-size: 35px;
+        }
+
+        .shadow-inner-100 {
+            border: 1px solid rgb(252, 252, 252);
+            box-shadow: 1px 1px 4px gray inset;
+        }
+
+        .gradient-border-x {
+            border-radius: 1rem;
+            border: solid;
+            border-image: 
+                radial-gradient(
+                    ellipse at center, 
+                    rgba(0, 0, 0, 0.5) 50%, 
+                    rgba(255, 255, 255, 0) 90%,
+                    rgba(255, 255, 255, 0) 100%
+                )
+                0 1/1px stretch;
+        }
+
+        .gradient-border {
+            border-radius: 1rem;
+            border: solid;
+            border-image: 
+                radial-gradient(
+                    ellipse at center, 
+                    rgba(0, 0, 0, 0.5) 50%, 
+                    rgba(255, 255, 255, 0) 90%,
+                    rgba(255, 255, 255, 0) 100%
+                )
+                1/1px stretch;
+        }
+
+        .gradient-border-r {
+            border-radius: 1rem;
+            border: solid;
+            border-image: 
+                radial-gradient(
+                    ellipse at center, 
+                    rgba(0, 0, 0, 0.5) 50%, 
+                    rgba(255, 255, 255, 0) 90%,
+                    rgba(255, 255, 255, 0) 100%
+                )
+                0 1 0 0/1px stretch;
+        }
+
+        @font-face {
+            font-family: 'Jenna Sue';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Jenna Sue'), url('JennaSue.woff') format('woff');
+        }
+
+        .font-jenna-sue {
+            font-family: 'Jenna Sue';
+        }
+
+        .font-georgia {
+            font-family: 'Georgia';
+        }
+
+        .font-arial {
+            font-family: 'Arial';
+        }
+    </style>
+</head>
+
+<body class="font-arial bg-gray-100">
+    <div>
+
+        <div class="mx-20">
+
+            <div class="space-y-4 px-6 py-2 bg-white gradient-border-x">
+                <img class="inline w-44" src="/img/logo.png" alt="Logo">
+        
+                <div class="space-y-4 text-sm">
+                    <div class="flex justify-between items-center pl-20 pr-10 text-white bg-gradient-to-r from-gray-50 via-indigo-900 to-gray-50">
+                        <div class="flex justify-between">
+                            <button class="px-6 py-2 bg-gray-1000 text-shadow-xs" type="button">Acasa</button>
+
+                            <button class="px-6 py-2" type="button">Despre noi</button>
+
+                            <div class="relative">
+                                <button class="h-full px-6 py-2 bg-gray-1000 text-shadow-xs" type="button">Daily</button>
+
+                                <div class="absolute bottom-0">
+                                    <div class="absolute flex flex-col space-y-2 w-40 p-4 bg-gray-1000">
+                                        <a class="text-shadow-xs" href="#">Tablete mentosan</a>
+                                        <a class="text-shadow-xs" href="#">Dropsuri</a>
+                                        <a class="text-indigo-900 text-shadow-xs" href="#">Caramele</a>
+                                        <a class="text-shadow-xs" href="#">Șerbet</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="px-6 py-2" type="button">Colin</button>
+
+                            <button class="px-6 py-2" type="button">Unde ne găsești?</button>
+
+                            <button class="px-6 py-2" type="button">Contact</button>
+                        </div>
+                    
+                        <div class="flex justify-between items-center w-40 h-6 px-2 text-indigo-900 bg-white border border-green-600 rounded-md">
+                            <div>caută</div>
+
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="text-center space-y-4 pt-4">
+                        <img class="mx-auto rounded-2xl" src="/img/biscuits.png" alt="biscuits">
+                        <p class="text-xl font-georgia italic">There are many variations of passages of Lorem Ipsum</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="-mt-3 pb-4 text-center">
+                <i class="fas fa-circle text-gray-1000 text-shadow-xs" style="font-size:12px;"></i>
+                <i class="fas fa-circle text-shadow-xs" style="font-size:12px;"></i>
+                <i class="fas fa-circle text-shadow-xs" style="font-size:12px;"></i>
+            </div>
+
+            <div class="flex justify-between px-10 py-4 font-georgia bg-white gradient-border">
+
+                <div class="w-3/5 space-y-6 pr-14">
+                    <h2 class="text-center text-5xl text-indigo-900 font-jenna-sue text-shadow-sm">Despre noi</h2>
+
+                    <div class="space-y-4 text-sm">
+                        <p><b>SCM Colin Daily</b> este o cooperativa mestesugareasca cu scop productiv, infiintata in anul <b>1955.</b> Avand in vedere numarul de personal angajat si cifra de afaceri realizata, societatea noastra poate fi inclusa in categoria firmelor mijlocii.</p>
+
+                        <p>Fiind o societate cooperativa, Colin Daily are capital privat detinut de grup - actiunile sunt deinute de catre angajati.</p>
+
+                        <p>SCM Colin Daily produce sub <b>2 branduri:</b></p>
+
+                        <ul class="space-y-4 text-indent">
+                            <li><b>> Daily</b> - pentru produsele zaharoase si pentru aditivi;</li>
+                            <li><b>> Colin</b> - pentru produsele vegetale.</li>
+                        </ul>
+
+                        <p>Compania noastra foloseste retete proprii pentru realizarea produselor sale, firma detinand licente de fabricatie care respecta legislatia romaneasca si europeana in...</p>
+                    </div>
+
+                    <div class="flex justify-center pb-2">
+                        <button class="px-2 py-1 text-xs text-white italic bg-indigo-1100 rounded-full" type="button">mai multe</button>
+                    </div>
+                </div>
+
+                <div class="w-1 gradient-border-r"></div>
+
+                <div class="flex flex-col items-center w-2/5 space-y-6 text-center">
+
+                    <h2 class="text-5xl text-indigo-900 font-jenna-sue text-shadow-sm">Produsele noastre</h2>
+
+                    <div class="relative space-y-2 text-sm text-gray-600">
+                        <div class="w-36 h-36 bg-gray-100 border border-gray-200 rounded-lg">
+                            <div class="flex items-center mx-auto mt-1 w-32 h-28 p-2 bg-white shadow-inner-100">
+                                <img class="mx-auto w-28" src="/img/salsa.png" alt="Salsa product">
+                            </div>
+
+                            <p class="inline-block align-middle text-xs">Sos Velveeta</p>
+                        </div>
+
+                        <div class="absolute top-32 right-40">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                        </div>
+
+                        <div class="absolute top-32 left-40">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+
+                        <div class="w-36 h-36 bg-gray-100 border border-gray-200 rounded-lg">
+                            <div class="flex items-center mx-auto mt-1 w-32 h-28 bg-white shadow-inner-100">
+                                <img class="mx-auto w-28" src="/img/margarine.png" alt="Margarine product">
+                            </div>
+                        
+                            <p class="inline-block align-middle text-xs">Margarina Wiesana</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center pb-2">
+                        <button class="px-2 py-1 text-xs text-white italic bg-indigo-1100 rounded-full" type="button">mai multe</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col h-44 text-xs text-white bg-indigo-1000">
+            <div class="flex justify-center space-x-24 pt-8 text-sm">
+                <a class="text-indigo-100 text-opacity-50" href="#">Acasa</a>
+                <a href="#">Despre noi</a>
+                <a href="#">Daily</a>
+                <a href="#">Colin</a>
+                <a href="#">Unde ne gasesti?</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="mt-20 mr-40 text-center text-xxs text-white text-opacity-50 font-georgia">2012.Toate drepturile rezervate</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
